@@ -12,6 +12,7 @@ app.get("/api", (req, res) =>{
   res.json({name:"Hell"})
 })
 app.post("/post_api", (req, res) =>{
+  res.set("Access-Control-Allow-Origin", "*")
   console.log(req)
 })
 
